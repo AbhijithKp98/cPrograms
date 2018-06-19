@@ -2,8 +2,8 @@
 int getodd(int a[],int a_size)  //function to get the odd times occuring number
 {
     int i;
-    for(i=0;i<a_size;i++)       //for loop from a[0]to a[12] 
     int out=0;                  //initialize out=0 else it will have any junk value
+    for(i=0;i<a_size;i++)       //for loop from a[0]to a[12] 
         out=out^a[i];           //XORing output every iteration with each element of the array
    //printf("%d\n",a_size);
     return out;

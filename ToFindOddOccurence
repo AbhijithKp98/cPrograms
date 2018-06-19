@@ -1,0 +1,18 @@
+#include<stdio.h>
+int getodd(int a[],int a_size)  //function to get the odd times occuring number
+{
+    int i;
+    for(i=0;i<a_size;i++)       //for loop from a[0]to a[12] 
+    int out=0;                  //initialize out=0 else it will have any junk value
+        out=out^a[i];           //XORing output every iteration with each element of the array
+   //printf("%d\n",a_size);
+    return out;
+}
+int main()                      //main function
+{
+
+    int a[12]={1,1,2,2,3,3,3,4,4,5,5};    
+    int n=sizeof(a)/sizeof(a[0]);       //n=12/4= 4
+    //printf("%d\n",sizeof(a[0]));
+    printf("%d\n",getodd(a,n));
+}

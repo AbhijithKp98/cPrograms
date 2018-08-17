@@ -16,26 +16,4 @@ return 0;
 }
 
 
-// Method 2
 
-void changeToZero(int a[2])
-{
-    a[ !a[0] ] = a[ !a[1] ]
-}
-Run on IDE
-Method 3
-This method doesn’t even need complement.
-
-void changeToZero(int a[2])
-{
-    a[ a[1] ] = a[ a[0] ]
-}
-Run on IDE
-Method 4
-Thanks to purvi for suggesting this method.
-
-void changeToZero(int a[2])
-{
-  a[0] = a[a[0]];
-  a[1] = a[0];
-}

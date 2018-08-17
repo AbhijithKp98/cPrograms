@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+
+{
+    int i,j,space;
+    for(i=1;i<16;i++)
+    {
+      for(space=1; space <= (16-i)/2; ++space)
+        {
+            printf("  ");
+
+        }
+        if(i%2==0)                // for printing stars in even lines
+        {
+
+            for(j=1;j<i;j++) 
+            {
+
+                printf("* ");
+            }
+        }
+            else                  // for printing dashes in odd number of lines
+            {
+                for(j=1;j<i;j++) 
+                    printf(" -");
+                                 }
+            printf("\n");
+    }
+}
